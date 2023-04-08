@@ -16,9 +16,10 @@
     <None Include="$(MSBuildThisFileDirectory)Content\Content.mgcb" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Source\GameContent\TestContainer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Engine\Container.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Engine\ResizeState.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Source\GameInstance.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Client.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Input\InputEvents.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Input\Listeners\GamepadEvents.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Input\Listeners\MouseEvents.cs" />

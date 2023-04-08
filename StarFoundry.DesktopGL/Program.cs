@@ -1,4 +1,4 @@
 ﻿using StarFoundry;
 
-using var game = new GameInstance();
+using var game = new Client();
 game.Run();

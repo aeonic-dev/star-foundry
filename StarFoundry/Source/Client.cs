@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended;
 using MonoGame.Extended.Screens;
@@ -7,8 +8,8 @@ using StarFoundry.Engine;
 using StarFoundry.Input;
 
 namespace StarFoundry {
-    public class GameInstance : Game {
-        public static GameInstance Instance { get; private set; } = null!;
+    public class Client : Game {
+        public static Client Instance { get; private set; } = null!;
 
         public static Container Container {
             get => Instance._container;
@@ -20,15 +21,17 @@ namespace StarFoundry {
         public static Size ScreenSize { get; private set; }
         public static GraphicsDeviceManager Graphics { get; private set; } = null!;
         public static SpriteBatch SpriteBatch { get; private set; } = null!;
+        public static ContentManager ContentManager { get; private set; } = null!;
 
         private readonly ScreenManager _screenManager;
 
         private Container _container = Container.Empty;
         private ResizeState _resizeState;
 
-        public GameInstance() {
+        public Client() {
             Instance = this;
-            Content.RootDirectory = "Content";
+            ContentManager = Content;
+            ContentManager.RootDirectory = "Content";
             IsMouseVisible = true;
 
             // Containers
@@ -49,10 +52,6 @@ namespace StarFoundry {
             // Input
             InputEvents.Bootstrap(this);
             Components.Add(InputEvents.Instance);
-        }
-
-        protected override void Initialize() {
-            base.Initialize();
         }
 
         public void SetContainer(Container container, Transition transition) {
