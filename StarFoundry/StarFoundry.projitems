@@ -26,4 +26,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Source\Input\Listeners\KeyboardEvents.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Input\Listeners\TouchEvents.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Content\textures\test.png" />
+  </ItemGroup>
 </Project>

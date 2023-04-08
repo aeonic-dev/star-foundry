@@ -5,6 +5,7 @@ using MonoGame.Extended;
 using MonoGame.Extended.Screens;
 using MonoGame.Extended.Screens.Transitions;
 using StarFoundry.Engine;
+using StarFoundry.GameContent;
 using StarFoundry.Input;
 
 namespace StarFoundry {
@@ -62,6 +63,12 @@ namespace StarFoundry {
             _screenManager.LoadScreen(container, transition);
         }
 
+        protected override void Initialize() {
+            base.Initialize();
+
+            Container = new TestContainer();
+        }
+
         protected void OnResize() {
             _resizeState = new ResizeState(true, Window.ClientBounds.Width, Window.ClientBounds.Height);
         }
@@ -72,11 +79,14 @@ namespace StarFoundry {
 
         protected override void Update(GameTime gameTime) {
             GameTime = gameTime;
-            // if (_resizeState.ResizePending) {
-            //     Graphics.PreferredBackBufferWidth = _resizeState.Width;
-            //     Graphics.PreferredBackBufferHeight = _resizeState.Height;
-            //     Graphics.ApplyChanges();
-            // }
+            if (_resizeState.ResizePending) {
+                Graphics.PreferredBackBufferWidth = _resizeState.Width;
+                Graphics.PreferredBackBufferHeight = _resizeState.Height;
+
+                ScreenSize = new Size(_resizeState.Width, _resizeState.Height);
+                _resizeState.ResizePending = false;
+                Graphics.ApplyChanges();
+            }
 
             base.Update(gameTime);
         }
