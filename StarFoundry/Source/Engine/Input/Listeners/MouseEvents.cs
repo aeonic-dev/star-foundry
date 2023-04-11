@@ -1,6 +1,6 @@
 ﻿using MonoGame.Extended.Input.InputListeners;
 
-namespace StarFoundry.Input.Listeners;
+namespace StarFoundry.Engine.Input.Listeners;
 
 public interface MouseEvents {
     public virtual void OnMouseDown(object? sender, MouseEventArgs mouse) { }

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace StarFoundry.ECS;
+namespace StarFoundry.Engine.ECS;
 
 /// <summary>
 /// A prefab describes a set of components and (optionally) default values for them; it essentially serves as a template

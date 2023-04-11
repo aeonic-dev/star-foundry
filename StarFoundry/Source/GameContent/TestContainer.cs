@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using StarFoundry.Engine;
+using StarFoundry.Engine.Core;
 
 namespace StarFoundry.GameContent;
 
@@ -20,7 +20,7 @@ public class TestContainer : Container {
         if ((_target.Bottom >= Client.ScreenSize.Height && _direction.Y > 0) || (_target.Top <= 0 && _direction.Y < 0))
             _direction.Y *= -1;
 
-        _target.Location += (_direction * 5).ToPoint();
+        _target.Location += (_direction * gameTime.ElapsedGameTime.Milliseconds * .2f).ToPoint();
     }
 
     public override void Draw(GameTime gameTime) {

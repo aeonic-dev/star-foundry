@@ -1,6 +1,6 @@
 ﻿using MonoGame.Extended.Input.InputListeners;
 
-namespace StarFoundry.Input.Listeners;
+namespace StarFoundry.Engine.Input.Listeners;
 
 public interface TouchEvents {
     public virtual void OnTouchStarted(object? sender, TouchEventArgs touch) { }

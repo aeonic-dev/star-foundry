@@ -6,7 +6,7 @@ using System.Linq;
 using MonoGame.Extended.Collections;
 using StarFoundry.Misc;
 
-namespace StarFoundry.ECS;
+namespace StarFoundry.Engine.ECS;
 
 /// <summary>
 /// A universe is a collection of entities and systems, with a base entity type. It is the root of the ECS.

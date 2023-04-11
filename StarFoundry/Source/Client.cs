@@ -4,9 +4,9 @@ using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended;
 using MonoGame.Extended.Screens;
 using MonoGame.Extended.Screens.Transitions;
-using StarFoundry.Engine;
+using StarFoundry.Engine.Core;
 using StarFoundry.GameContent;
-using StarFoundry.Input;
+using StarFoundry.Engine.Input;
 
 namespace StarFoundry {
     public class Client : Game {

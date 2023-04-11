@@ -1,6 +1,6 @@
 ﻿using MonoGame.Extended.Input.InputListeners;
 
-namespace StarFoundry.Input.Listeners;
+namespace StarFoundry.Engine.Input.Listeners;
 
 public interface GamepadEvents {
     public virtual void OnGamepadButtonDown(object? sender, GamePadEventArgs gamepad) { }

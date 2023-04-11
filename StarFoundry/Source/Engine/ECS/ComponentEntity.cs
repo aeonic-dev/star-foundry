@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 
-namespace StarFoundry.ECS;
+namespace StarFoundry.Engine.ECS;
 
 /// <summary>
 /// An entity in the ECS. Not the same as an actual game entity; this interface is used both for them and for tile entities.
@@ -54,7 +54,7 @@ public abstract class ComponentEntity<TSelf> where TSelf : ComponentEntity<TSelf
     /// Attaches a component to an entity. If the entity already has the component, it will be overwritten.<br /><br />
     /// This method can only be called after the entity has been added to a universe, or else an exception will be thrown.
     /// Returns a reference to the component that was attached. See Universe#AttachComponent for more information.<br /><br />
-    /// Prefer keeping a reference to the accessor returned by <see cref="StarFoundry.ECS.Universe.GetComponentAccessor"/>
+    /// Prefer keeping a reference to the accessor returned by <see cref="Universe{TEntity}.GetComponentAccessor"/>
     /// for performance.
     /// </summary>
     /// <typeparam name="T"></typeparam>
@@ -71,7 +71,7 @@ public abstract class ComponentEntity<TSelf> where TSelf : ComponentEntity<TSelf
     /// Attaches a component to an entity. If the entity already has the component, it will be overwritten.<br /><br />
     /// This method can only be called after the entity has been added to a universe, or else an exception will be thrown.
     /// Returns a reference to the component that was attached. See Universe#AttachComponent for more information.<br /><br />
-    /// Prefer keeping a reference to the accessor returned by <see cref="StarFoundry.ECS.Universe.GetComponentAccessor"/>
+    /// Prefer keeping a reference to the accessor returned by <see cref="Universe{TEntity}.GetComponentAccessor"/>
     /// for performance.
     /// </summary>
     public ref T Attach<T>(T component) where T : struct {

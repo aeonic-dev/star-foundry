@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework.Content;
 using MonoGame.Extended.Screens;
 
-namespace StarFoundry.Engine;
+namespace StarFoundry.Engine.Core;
 
 /// <summary>
 /// A container that events are delegated to from the game instance.

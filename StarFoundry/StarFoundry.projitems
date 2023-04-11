@@ -16,24 +16,13 @@
     <None Include="$(MSBuildThisFileDirectory)Content\Content.mgcb" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Source\ECS\ComponentAccessor.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Source\ECS\Prefab.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Source\ECS\ComponentBag.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Source\ECS\ComponentEntity.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Source\ECS\PrefabBuilder.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Source\ECS\SpaceAlienException.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Source\ECS\Universe.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Engine\Core\Container.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Engine\Core\ResizeState.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\GameContent\TestContainer.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Source\Engine\Container.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Source\Engine\ResizeState.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Client.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Source\Input\InputEvents.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Source\Input\Listeners\GamepadEvents.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Source\Input\Listeners\MouseEvents.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Source\Input\Listeners\KeyboardEvents.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Source\Input\Listeners\TouchEvents.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Misc\BitArrayExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Misc\IndexPool.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Test\EntityTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)Content\textures\test.png" />

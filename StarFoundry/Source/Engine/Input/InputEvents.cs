@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using MonoGame.Extended.Input.InputListeners;
-using StarFoundry.Input.Listeners;
+using StarFoundry.Engine.Input.Listeners;
 
-namespace StarFoundry.Input;
+namespace StarFoundry.Engine.Input;
 
 public class InputEvents : InputListenerComponent {
     public static InputEvents Instance { get; private set; } = null!;

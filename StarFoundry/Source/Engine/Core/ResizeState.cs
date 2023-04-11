@@ -1,4 +1,4 @@
-﻿namespace StarFoundry.Engine;
+﻿namespace StarFoundry.Engine.Core;
 
 /// <summary>
 /// Tracks the state of the resize operation, used so we can keep drawing while the resize is pending.

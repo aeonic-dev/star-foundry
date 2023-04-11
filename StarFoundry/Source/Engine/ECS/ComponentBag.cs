@@ -4,7 +4,7 @@ using System.Reflection;
 using MonoGame.Extended.Collections;
 using StarFoundry.Misc;
 
-namespace StarFoundry.ECS;
+namespace StarFoundry.Engine.ECS;
 
 public interface IComponentBag {
     internal object? GetCopy(object entity);

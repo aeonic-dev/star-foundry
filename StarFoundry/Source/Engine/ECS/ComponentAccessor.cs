@@ -1,4 +1,4 @@
-﻿namespace StarFoundry.ECS;
+﻿namespace StarFoundry.Engine.ECS;
 
 /// <summary>
 /// Provides access to all components of a given type for any entity in the same universe this accessor belongs to.

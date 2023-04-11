@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using StarFoundry.Misc;
 
-namespace StarFoundry.ECS;
+namespace StarFoundry.Engine.ECS;
 
 /// <summary>
 /// A builder for a <see cref="Prefab{TEntity}"/> that allows you to specify which components it should have and what
